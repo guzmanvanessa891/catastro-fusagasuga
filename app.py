@@ -15,7 +15,7 @@ def cargar(ruta):
 
 CAPAS = {
     "Urbano (manzanas)": {
-        "archivo": "datos/manzanas_resumen.geojson",
+        "archivo": "manzanas_resumen.geojson",
         "centro": [4.34, -74.36], "zoom": 14,   # ajusta el centro si hace falta
         "metricas": {
             "% lotes urbanizados sin construir": "pct_sin_construir",
@@ -25,7 +25,7 @@ CAPAS = {
         },
     },
     "Rural (veredas)": {
-        "archivo": "datos/veredas_resumen.geojson",
+        "archivo": "veredas_resumen.geojson",
         "centro": [4.30, -74.38], "zoom": 11,
         "metricas": {
             "% predios agropecuarios": "pct_agropecuario",
