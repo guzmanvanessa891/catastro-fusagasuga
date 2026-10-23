@@ -46,7 +46,7 @@ with tab_mapa:
 
     gj, df = cargar(cfg["archivo"])
     m = folium.Map(location=cfg["centro"], zoom_start=cfg["zoom"],
-                   tiles="cartodbpositron")
+                   tiles="OpenStreetMap")
     folium.Choropleth(
         geo_data=gj, data=df[["codigo", col]].dropna(),
         columns=["codigo", col], key_on="feature.properties.codigo",
